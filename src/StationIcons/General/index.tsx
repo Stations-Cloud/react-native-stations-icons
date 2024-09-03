@@ -7,7 +7,6 @@ import Archive from "./Archive";
 import Asterisk01 from "./Asterisk01";
 import Asterisk02 from "./Asterisk02";
 import AtSign from "./AtSign";
-import Bookmark from "./BookMark";
 import BookmarkAdd from "./BookmarkAdd";
 import BookmarkCheck from "./BookmarkCheck";
 import BookmarkMinus from "./BookmarkMinus";
@@ -17,6 +16,7 @@ import Building02 from "./Building02";
 import Building03 from "./Building03";
 import Building04 from "./Building04";
 import Building05 from "./Building05";
+import Bookmark from "./Bookmark";
 
 const iconsGeneral = {
   activity: Activity,
