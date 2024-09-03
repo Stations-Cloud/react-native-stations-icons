@@ -5,7 +5,8 @@
   "main": "lib/index",
   "types": "lib/index.d.ts",
   "files": [
-    "src"
+    "src",
+    "lib"
   ],
   "peerDependencies": {
     "react": ">=17.0.0",
