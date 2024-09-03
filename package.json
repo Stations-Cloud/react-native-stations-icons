@@ -8,6 +8,9 @@
     "src",
     "lib"
   ],
+  "scripts": {
+    "build": "tsc"
+  },
   "peerDependencies": {
     "react": ">=17.0.0",
     "react-native": ">=0.64.0",
@@ -17,6 +20,7 @@
     "@types/react": "^18.3.5",
     "react-native-svg": "^13.0.0"
   },
+  "license": "MIT",
   "repository": "https://github.com/Stations-Cloud/react-native-stations-icons",
   "author": "Hugo Emannuel <hugoemannuel53@gmail.com> (https://github.com/hugoemannuel)"
 }
