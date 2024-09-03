@@ -2,7 +2,7 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 import { IStationsIcon } from "../interface/IStationsIcon";
 
-const ActivityHeart = (props: IStationsIcon) => (
+const Building05 = (props: IStationsIcon) => (
   <Svg
     {...props}
     viewBox="0 0 32 32"
@@ -15,8 +15,8 @@ const ActivityHeart = (props: IStationsIcon) => (
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
-      d="M12 18s1.5 2 4 2 4-2 4-2m1-4.76c-.395.485-.935.76-1.5.76s-1.09-.275-1.5-.76m-4 0c-.395.485-.935.76-1.5.76s-1.09-.275-1.5-.76M26 16c0 5.523-4.477 10-10 10S6 21.523 6 16 10.477 6 16 6s10 4.477 10 10Z"
+      d="M12.7 9h4.8c1.12 0 1.68 0 2.108.218a2 2 0 0 1 .874.874c.218.428.218.988.218 2.108V19m-8 0V4.2c0-1.12 0-1.68-.218-2.108a2 2 0 0 0-.874-.874C11.18 1 10.62 1 9.5 1H5.9c-1.12 0-1.68 0-2.108.218a2 2 0 0 0-.874.874C2.7 2.52 2.7 3.08 2.7 4.2V19m19 0h-20M6.2 5h3m-3 4h3m-3 4h3"
     />
   </Svg>
 );
-export default ActivityHeart;
+export default Building05;

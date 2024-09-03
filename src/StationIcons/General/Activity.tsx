@@ -1,5 +1,5 @@
 import * as React from "react";
-import Svg, { SvgProps, Path } from "react-native-svg";
+import Svg, { Path } from "react-native-svg";
 import { IStationsIcon } from "../interface/IStationsIcon";
 
 const Activity = (props: IStationsIcon) => (
