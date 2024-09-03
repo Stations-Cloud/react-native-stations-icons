@@ -15,5 +15,7 @@
   "dependencies": {
     "@types/react": "^18.3.5",
     "react-native-svg": "^13.0.0"
-  }
+  },
+  "repository": "https://github.com/Stations-Cloud/react-native-stations-icons",
+  "author": "Hugo Emannuel <hugoemannuel53@gmail.com> (https://github.com/hugoemannuel)"
 }
