@@ -1,5 +1,6 @@
 {
   "name": "react-native-stations-icons",
+  "description": "",
   "version": "1.0.0",
   "main": "lib/index",
   "types": "lib/index.d.ts",
