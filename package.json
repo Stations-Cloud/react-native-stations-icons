@@ -6,11 +6,11 @@
   "types": "lib/index.d.ts",
   "files": [
     "src",
-    "assets/fonts",
+    "src/fonts",
     "lib"
   ],
   "scripts": {
-    "build": "rm -rf lib && tsc"
+    "build": "rm -rf lib && tsc && copyfiles -u 1 \"src/fonts/**/*\" lib/"
   },
   "dependencies": {
     "@types/react": "^18.3.5",
@@ -20,6 +20,7 @@
     "react-native": "^0.75.2"
   },
   "devDependencies": {
+    "copyfiles": "^2.4.1",
     "typescript": "^5.5.4"
   },
   "license": "MIT",
