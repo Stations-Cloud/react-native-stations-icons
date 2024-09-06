@@ -5,37 +5,34 @@ import { IconMapping, IStationsIcon } from "../interface";
 
 const createIconsComponent = (fontName: string, json: IconMapping, font: any) => {
   return ({ name, color, size }: IStationsIcon<keyof typeof json>) => {
-
-    const [loaded, setLoaded] = React.useState(false);
-
+    const [fontLoaded, setFontLoaded] = React.useState(false);
 
     React.useEffect(() => {
-      async function loadFont() {
+      const loadFont = async () => {
         try {
           await Font.loadAsync({
-            [fontName]: font,
+            [fontName]: font
           });
-          setLoaded(true);
+          setFontLoaded(true);
         } catch (error) {
-          console.log("***Erro ao carregar fonte:", error);
+          console.error(`Erro ao carregar a fonte ${fontName}:`, error);
         }
-      }
+      };
 
       loadFont();
-    }, []);
+    }, [fontName, font]);
 
-    if (!loaded) {
-      return <Text style={{ fontSize: size, color }}>...Carregando</Text>;
+    if (!fontLoaded) {
+      return (<Text>... Carregando... </Text>);
     }
+
 
     return (
       <Text style={{ fontSize: size, color, fontFamily: fontName }}>
         {unescape(String(json[name]))}
       </Text>
-    );
+    )
   }
 };
-
-
 
 export default createIconsComponent;
